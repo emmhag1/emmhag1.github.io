@@ -1,0 +1,166 @@
+
+body{
+    background-image: url("Bilder/skyer.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#hovedoverskrift {
+    background-color:#8d9db6;
+    font-family:'Roboto Condensed', sans-serif;
+    margin: 0 px;
+    text-align: center;
+    padding: 50px;
+    color:rgb(255, 255, 255);
+    border: black 100px;
+}
+
+#flexbox-meny{
+    display: flex; /*for å fortelle at vi jobber med flexboks*/
+    justify-content: center; /*justerer mellomrom mellom innholdet*/
+    text-align: center;
+    padding: 10px; 
+    border: black 30px;
+    /*height: 100%; /*gjør at innholdet blir strekt nedover hele siden*/
+    flex-direction: row; /*bestemmer layouten. Standardinstillingen er horizontal, kan ogsa bruke "column". Dette gir vertikal.*/
+    flex-wrap: wrap; /* Dersom vi har presisert at hver kolonne skal ha widhth 300px vil det ikke alltid være plass, når man justerer vinduet på nettsiden. 
+    "flex-wrap" gjør at kolonnene hopper under hverandre dersom det ikke er nok plass horisontalt*/
+}
+
+#flexbox-meny > div {
+    width: 300px;
+    font-size: 20px;
+    color: white;
+    padding: 10px;
+}
+
+.startside{
+    background-color: #cfe0e8;
+    
+}
+.historikk {
+    background-color: #daebe8 ;
+    
+}
+.aktiviteter {
+    background-color: #b7d7e8;
+    
+}
+.ordensregler{
+    background-color: #87bdd8;
+    
+}
+ nav > div:hover{ /* gjør menyen klikkbar*/
+    background-color: rgb(161, 161, 161);
+}
+
+nav a {
+    display: flex;
+    justify-content: space-around;
+    color:black;
+}
+
+.intro{
+    width: 500px;    
+    padding: 20px;
+    margin: 0 auto;
+    text-align: center;
+    border: solid black 2px;
+}
+/* ========hoveddel startside=========*/
+
+
+#informasjon{ /* infomasjon om lokalet */
+    width: 500px;    
+    padding: 10px;
+    border: rgb(175, 174, 174)solid 80px;
+    text-align: center;
+    background-color: white;
+}
+
+.hoveddel-1{   
+    display: flex;
+    padding: 100px;
+    margin: auto 0;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 50px;
+    background-color: white; 
+    justify-content: center;
+    border: solid #cfe0e8 20px;
+}
+
+.hoveddel-2{ /* første del med infomasjon, priser og kontakt*/
+    display: flex;
+    justify-content: space-around center;
+    align-items: center;
+    margin: 0;
+    padding: 100px;
+}
+.priser-kontakt{ /* boks med priser og kontakt*/
+    display: flex;
+    width: 500px;
+    flex-wrap: wrap;
+    flex-flow: column;
+    align-items: center;
+    padding: 30px;
+    align-items: center;
+    padding: 30px;
+
+}
+
+#priser{
+    display: flex;
+    margin: 10px;   
+    padding: 20px;
+    background-color:#cfe0e8;
+    padding: 50px;
+
+}
+#kontakt{
+    display: flex;
+    padding: 20px;
+    margin: 10px;
+    background-color:#b7d7e8;
+    padding: 50px;
+}
+
+#adresse{
+    border: 2px solid black;
+    padding: 20px;
+    margin: 10px;
+    background-color: white;
+}
+
+#veibeskrivelse{
+    background-color:#8d9db6;
+    font-family:'Roboto Condensed', sans-serif;
+    margin: 0 px;
+    padding: 10px;
+    padding-left: 30px;
+    color:white;
+
+} 
+
+
+/*========= hoveddel historikk==========*/
+
+.his-hoveddel-1{ /*hoveddel "historie" */    
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    margin: auto 0;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 50px;
+    background-color: white; 
+    justify-content: center;
+    border: solid #cfe0e8 20px;
+}
+.tekst{
+    display: flex;
+    width: 400px;
+    font-size: 20px;
+    padding-right: 100px;
+    text-align: center;
+}
+
