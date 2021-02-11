@@ -61,7 +61,7 @@ nav a {
 
 .intro{
     width: 500px;    
-    padding: 20px;
+    padding: 10px;
     margin: 0 auto;
     text-align: center;
     border: solid black 2px;
@@ -142,7 +142,7 @@ nav a {
 } 
 
 
-/*========= hoveddel historikk==========*/
+/*========= historikk==========*/
 
 .his-hoveddel-1{ /*hoveddel "historie" */    
     display: flex;
@@ -156,6 +156,19 @@ nav a {
     justify-content: center;
     border: solid #cfe0e8 20px;
 }
+.his-hoveddel-2{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    margin: auto 0;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 50px;
+    background-color: white; 
+    justify-content: center;
+    border: solid #daebe8 20px;
+}
+
 .tekst{
     display: flex;
     width: 400px;
@@ -164,3 +177,9 @@ nav a {
     text-align: center;
 }
 
+/*=========== ordensregler=========*/
+
+.tekst-ordensregler{ /*tekst ordenregler*/
+    font-size: 20px;
+    font-weight: 5px;
+}
